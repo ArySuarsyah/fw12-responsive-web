@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="Asset/css/style.css">
+</head>
+<body>
+<main class="container">
+
+    <!-- Hero Image -->
+    <section class="section-1">
+        <div class="brand-tickitz">
+            <picture>
+                <source media="(max-width: 576px)" srcset="Asset/image/TickitzBlue.png">
+                <img src="Asset/image/tickitz1.png" alt="Tickitz-brand" class="img-Tickitz">
+            </picture>
+            <span>wait, watch, wow!</span>
+        </div>
+    </section>
+    <!-- End  -->
+
+    <!-- Form Header-->
+    <section class="section-2 scroll">
+        <h3 class="header-form">Sign Up</h3>
+        <span class="textTitle">Fill your additional details</span>
+        <!-- End Form Header -->
+
+        <section>
+            <form class="form-wrap" action="" method="post" >
+                <div>
+                    <label class="form-label" for="first-name">First Name</label>
+                    <input type="text" name="first-name" id="first-name" placeholder="Write your first name" required>
+                </div>
+                <div>
+                    <label class="form-label"  for="last-name">Last Name</label>
+                    <input type="text" name="last-name" id="last-name" placeholder="Write your last name">
+                </div>
+                <div>
+                    <label class="form-label" for="phone-number">Phone Number</label>
+                    <input type="tel" name="phone-number" id="phone-number" placeholder="Write your phone number" required minlength="10">
+                </div>
+                <div>
+                    <label class="form-label" for="email">Email</label>
+                    <input type="email" name="email" id="email" placeholder="Write your email" minlength="2" required>
+                </div>
+                <div class="password">
+                    <label class="form-label" for="password">Password</label>
+                    <input type="password" name="password" id="password" placeholder="Write your password" minlength="8" required>
+                </div>
+                <div>
+                    <a href="index.html">
+                        <button class="btn-primary" type="button">Sign Up</button>
+                    </a>
+                </div>
+            </form>
+            <footer class="textEnd">
+                <span>
+                    Already have account? <a href="signIn.html">Sign In</a>
+                </span>
+            </footer>
+        </section>
+
+        <!-- end form -->
+
+    </section>
+</main>
+</body>
+</html>

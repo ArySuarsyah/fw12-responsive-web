@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=
+    , initial-scale=1.0">
+    <title>Profile Page</title>
+    <link rel="stylesheet" href="Asset/css/style.css">
+</head>
+<body>
+    <main class="container-profilePage">
+        <header>
+            <nav class="nav-bar-profilePage">
+                <div class="brand-profilePage"><img src="Asset/image/TickitzBlue.png" alt="">
+                </div>
+                <div class="link-nav-profilePage">
+                    <a href="index.html">Home</a>
+                    <a href="viewAll.html">List Movie</a>
+                </div>
+                <div class="searchNav-profilePage">
+                    <img src="Asset/image/search.png" alt="">
+                </div>
+                <div class="btn-nav-profilePage">
+                    <img src="Asset/image/imageMovie2.png" alt="Profil" class="profil">
+                </div>
+            </nav>
+        </header>
+        <section class="history-profilePage">
+            <div class="account">
+                <span>INFO</span>
+                <img src="Asset/image/profil.png" alt="">
+                <p>Jonas El Rodriguez</p>
+                <p>Moviegoers</p>
+                <div></div>
+                <a href="signIn.html">Logout
+                </a>
+            </div>
+            <div class="profilePage">
+                <div class="link1-profilePage active">
+                    <a href="profilPage.html">Account Settings</a>
+                </div>
+                <div class="link2-profilePage nonActive">
+                    <a href="orderHistory.html">Order History</a>
+                </div>
+            </div>
+            <div>
+                <div class="accountAndPrivacy">
+                    <span>Details Information</span>
+                    <div class="lineAccontPrivacy"></div>
+                    <form action="" method="post">
+                        <div>
+                            <label class="form-label profilLabel" for="first-name">First Name</label>
+                            <input type="text" name="first-name" id="first-name" placeholder="Write your first name" required>
+                        </div>
+                        <div>
+                            <label class="form-label profilLabel"  for="last-name">Last Name</label>
+                            <input type="text" name="last-name" id="last-name" placeholder="Write your last name">
+                        </div>
+                        <div>
+                            <label class="form-label profilLabel" for="email">Email</label>
+                            <input type="email" name="email" id="email" placeholder="Write your email" minlength="2" required>
+                        </div>
+                        <div>
+                            <label class="form-label profilLabel" for="phone-number">Phone Number</label>
+                            <input type="tel" name="phone-number" id="phone-number" placeholder="+62 | Write your phone number" required minlength="10">
+                        </div>
+                    </form>
+                </div>
+                <button class="updateChanges">Update changes</button>
+                <div class="accountAndPrivacy">
+                    <span>Account and Privacy</span>
+                    <div class="lineAccontPrivacy"></div>
+                    <form action="" method="post">
+                        <div class="password-profile">
+                            <label class="form-label profilLabel" for="password">New Password</label>
+                            <input type="password" name="password" id="password" placeholder="Write your password" minlength="8" required>
+                        </div>
+                        <div class="password-profile">
+                            <label class="form-label profilLabel" for="password">Confirm Password</label>
+                            <input type="password" name="password" id="password" placeholder="Confirm your password" minlength="8" required>
+                        </div>
+                    </form>
+                </div>
+                <button class="updateChanges">Update changes</button>
+            </div>
+        </section>
+    </main>
+    <footer class="homePage-footer">
+        <section class="footer-section">
+            <div class="brand-footer">
+                <img src="Asset/image/Tickitz 2.png" alt="">
+                <span>Stop waiting in line. Buy tickets <br>conveniently, watch movies quietly.</span>
+            </div>
+            <div class="nav2">
+                <h6>Explore</h6>
+                <a href="index.html">Home</a>
+                <a href="viewAll.html">List Movie</a>
+            </div>
+            <div class="sponsor">
+                <h6>Our Sponsor</h6>
+                <img src="Asset/image/ebuId.png" alt="">
+                <img src="Asset/image/cineOne21.png" alt="">
+                <img src="Asset/image/hiflix.png" alt="">
+            </div>
+            <div class="social">
+                <h6>Follow us</h6>
+                <figure class="social-Img">
+                    <img src="Asset/image/fb.png" alt="">
+                    <figcaption class="facebook">Tickitz Cinema id</figcaption>
+                </figure>
+                <figure class="social-Img">
+                    <img src="Asset/image/ig.png" alt="">2
+                    <figcaption class="instagram">tickitz.id</figcaption>
+                </figure>
+                <figure class="social-Img">
+                    <img src="Asset/image/tw.png" alt="">
+                    <figcaption class="twitter">tickitz.id</figcaption>
+                </figure>
+                <figure class="social-Img">
+                    <img src="Asset/image/yt.png" alt="">
+                    <figcaption class="youtube">Tickitz Cinema id</figcaption>
+                </figure>
+            </div>
+        </section>
+        <div class="copyright">
+            © 2020 Tickitz. All Rights Reserved.
+        </div>
+    </footer>
+</body>
+</html>

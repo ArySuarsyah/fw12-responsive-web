@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forgot Password</title>
+    <link rel="stylesheet" href="Asset/css/style.css">
+</head>
+<body>
+<main class="container">
+    <!-- Hero Image -->
+    <section class="section-1">
+        <div class="stepList">
+            <picture>
+                <source media="(max-width: 576px)" srcset="Asset/image/TickitzBlue.png">
+                <img src="Asset/image/tickitz1.png" alt="Tickitz-brand" class="img-Tickitz">
+            </picture>
+            <div>
+                <span class="letsResetPwd">Lets reset your password</span><br>
+                <p>To be able to use your account again, please <br>complete the following steps.</p>
+            </div>
+            <div class="step">
+                <div class="step1">
+                    <p><span>1</span> Fill your complete email</p>
+                    <div class="lineStep"></div>
+                </div>
+                <div class="step2">
+                    <p><span>2</span> Check your email</p>
+                    <div class="lineStep"></div>
+                </div>
+                <div class="step3">
+                    <p><span>3</span> Enter your new password</p>
+                    <div class="lineStep"></div>
+                </div>
+                <div>
+                    <p><span>4</span> Done</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- End  -->
+
+    <!-- Form Header-->
+    <section class="formForgotPwd">
+        <h3 class="emailform-title">Fill your complete email</h3>
+        <h3 class="emailform-title2">Forgot Password</h3>
+        <span class="textTitle">we'll send a link to your email shortly</span>
+        <!-- End Form Header -->
+
+        <section>
+            <form class="form-wrap" action="" method="post" >
+                <div>
+                    <label class="form-label" for="email">Email</label>
+                    <input type="email" name="email" id="email" placeholder="Write your email" minlength="2" required>
+                </div>
+                <div>
+                    <a href="updatePwd.html">
+                        <button class="btn-primary" type="button">Send</button>
+                    </a>
+                </div>
+            </form>
+        </section>
+
+        <!-- end form -->
+
+    </section>
+</main>
+</body>
+</html>

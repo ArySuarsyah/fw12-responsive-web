@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="Asset/css/style.css">
+
+
+    <script src="https://unpkg.com/feather-icons"></script>
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+</head>
+<body>
+    <main class="container-dashboard">
+        <header>
+            <nav class="nav-bar-dashboard">
+                <div class="brand"><img src="Asset/image/TickitzBlue.png" alt="">
+                </div>
+                <div class="link-nav">
+                    <a href="dashboard.html">Dashboard</a>
+                    <a href="manage-MoviePage.html">Manage Movie</a>
+                    <a href="schedulePage.html">Manage Schedule</a>
+                </div>
+                <div class="searchNav">
+                    <img src="Asset/image/search.png" alt="">
+                </div>
+                <div class="btn-nav">
+                    <img src="Asset/image/imageMovie2.png" alt="Profil" class="profil">
+                </div>
+            </nav>
+        </header>
+        <section class="dashboardPage">
+            <div class="containerDashboard2">
+                <div class="dashboardTitle">
+                    <h2>Dashboard</h2>
+                    <h2>Filtered</h2>
+                </div>
+                <div class="dashboardMain">
+                    <div class="diagramDashboard">
+                        <img src="Asset/image/diagram.png" alt="">
+                    </div>
+                    <div class="dashboardForm">
+                        <form action="">
+                            <div class="movieSelect-dashboard">
+                                <select name="movieSelect" id="selectMovieDashboar">
+                                    <option value="">Select Movie</option>
+                                    <option value="Spider-Man">Spider-Man:Home Coming</option>
+                                    <option value="Black Widow">Black Widow</option>
+                                </select>
+                                <i data-feather="chevron-down"></i>
+                            </div>
+                            <div class="premierSelect-dashboard">
+                                <select name="selecPrimier" id="selectPremierDasboard">
+                                    <option value="">Select Premier</option>
+                                    <option value=""></option>
+                                    <option value=""></option>
+                                </select>
+                                <i data-feather="chevron-down"></i>
+                            </div>
+                            <div class="location-dashboard">
+                                <select name="selectLocation" id="selectLocationDashboard">
+                                    <option value="">Select Location</option>
+                                    <option value=""></option>
+                                    <option value=""></option>
+                                </select>
+                                <i data-feather="chevron-down"></i>
+                            </div>
+                            <button type="submit">Filter</button>
+                            <button type="reset">Reset</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="homePage-footer">
+        <section class="footer-section">
+            <div class="brand-footer">
+                <img src="Asset/image/Tickitz 2.png" alt="">
+                <span>Stop waiting in line. Buy tickets <br>conveniently, watch movies quietly.</span>
+            </div>
+            <div class="nav2">
+                <h6>Explore</h6>
+                <a href="index.html">Home</a>
+                <a href="viewAll.html">List Movie</a>
+            </div>
+            <div class="sponsor">
+                <h6>Our Sponsor</h6>
+                <img src="Asset/image/ebuId.png" alt="">
+                <img src="Asset/image/cineOne21.png" alt="">
+                <img src="Asset/image/hiflix.png" alt="">
+            </div>
+            <div class="social">
+                <h6>Follow us</h6>
+                <figure class="social-Img">
+                    <img src="Asset/image/fb.png" alt="">
+                    <figcaption class="facebook">Tickitz Cinema id</figcaption>
+                </figure>
+                <figure class="social-Img">
+                    <img src="Asset/image/ig.png" alt="">2
+                    <figcaption class="instagram">tickitz.id</figcaption>
+                </figure>
+                <figure class="social-Img">
+                    <img src="Asset/image/tw.png" alt="">
+                    <figcaption class="twitter">tickitz.id</figcaption>
+                </figure>
+                <figure class="social-Img">
+                    <img src="Asset/image/yt.png" alt="">
+                    <figcaption class="youtube">Tickitz Cinema id</figcaption>
+                </figure>
+            </div>
+        </section>
+        <div class="copyright">
+            © 2020 Tickitz. All Rights Reserved.
+        </div>
+    </footer>
+    <script>
+        feather.replace()
+    </script>
+</body>
+</html>

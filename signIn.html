@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign In</title>
+    <link rel="stylesheet" href="Asset/css/style.css">
+</head>
+<body>
+<main class="container">
+    <!-- Hero Image -->
+    <section class="section-1">
+        <div class="brand-tickitz">
+            <picture>
+                <source media="(max-width: 576px)" srcset="Asset/image/TickitzBlue.png">
+                <img src="Asset/image/tickitz1.png" alt="Tickitz-brand" class="img-Tickitz">
+            </picture>
+            <span>wait, watch, wow!</span>
+        </div>
+    </section>
+
+    <!-- End  -->
+
+    <!-- Form Header-->
+    <section class="section-2">
+        <h3 class="header-form">Sign In</h3>
+        <span class="textTitle">Sign in with your data that you entered during your registration</span>
+        <!-- End Form Header -->
+
+        <section>
+            <form class="form-wrap" action="" method="post" >
+                <div>
+                    <label class="form-label" for="email">Email</label>
+                    <input type="email" name="email" id="email" placeholder="Write your email" minlength="2" required>
+                </div>
+                <div class="password">
+                    <label class="form-label" for="password">Password</label>
+                    <input type="password" name="password" id="password" placeholder="Write your password" minlength="8" required>
+                    <img class="pwd-img" src="../Asset/Vector.png" alt="">
+                </div>
+                <div>
+                    <a href="index.html">
+                        <button class="btn-primary" type="button">Sign In</button>
+                    </a>
+                </div>
+            </form>
+            <footer class="textEnd">
+                <span>
+                    Forgot your password? <a href="forgotPwd.html">Reset now</a>
+                </span>
+                <br>
+                <span>
+                    Don't have an account? <a href="signUp.html">Sign Up</a>
+            </footer>
+                </span>
+        </section>
+
+        <!-- end form -->
+
+    </section>
+</main>
+</body>
+</html>
