@@ -25,25 +25,29 @@
 
     <!-- Form Header-->
     <section class="section-2">
+        <div class="alertLogin">
+            <span>Login Success</span>
+        </div>
         <h3 class="header-form">Sign In</h3>
         <span class="textTitle">Sign in with your data that you entered during your registration</span>
         <!-- End Form Header -->
 
         <section>
-            <form class="form-wrap" action="" method="post" >
+            <form class="form-wrap" id="form-warp">
                 <div>
                     <label class="form-label emailSignIn" for="email">Email</label>
-                    <input type="email" name="email" id="email" placeholder="Write your email" minlength="2" required>
+                    <input type="email" name="email" id="email" placeholder="Write your email" minlength="2" autocomplete="off" required>
                 </div>
                 <div class="password">
                     <label class="form-label passwodSignIn" for="password">Password</label>
-                    <input type="password" name="password" id="password" placeholder="Write your password" minlength="8" required>
-                    <i data-feather="eye-off" class="eye-off"></i>
-                    <i data-feather="eye" class="eye"></i>
+                    <input type="password" name="password" id="pswd" placeholder="Write your password" minlength="8" required>
+                    <div class="hideShow" id="hideShow">
+                        <i data-feather="eye" id="iconShowHide"></i>
+                    </div>
                 </div>
                 <div>
-                    <a href="index.html">
-                        <button class="btn-primary" type="button">Sign In</button>
+                    <a href="">
+                        <button class="btn-primary" id="btn-login" type="submit">Sign In</button>
                     </a>
                 </div>
             </form>
@@ -65,8 +69,40 @@
 <script>
     feather.replace();
 
-    const email = document.getElementsByTagName('i');
-console.log(email);
+    let pswd = document.getElementById('pswd');
+    let showHide = document.getElementById('hideShow')
+    const show = document.getElementById('iconShowHide');
+
+    // show hide password
+
+    showHide.addEventListener('click', () => {
+        if(pswd.type === 'password'){
+            pswd.setAttribute('type', 'text');
+            show.innerHTML = `<path d="M17.94 17.94A10.07 10.07 0 0 1 12 20c-7 0-11-8-11-8a18.45 18.45 0 0 1 5.06-5.94M9.9 4.24A9.12 9.12 0 0 1 12 4c7 0 11 8 11 8a18.5 18.5 0 0 1-2.16 3.19m-6.72-1.07a3 3 0 1 1-4.24-4.24"></path>
+            <line x1 = "1" y1 = "1" x2 = "23" y2 = "23" ></ >`
+                ;
+            show.style.color='#000'
+        } else {
+            pswd.setAttribute('type', 'password');
+            show.innerHTML = `<path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
+            <circle cx="12" cy="12" r="3"></circle>`
+        }
+    })
+
+
+    // btn-login
+
+    const formLogin = document.getElementById('form-warp')
+
+    const submit = document.getElementById('btn-login');
+    formLogin.addEventListener('submit', (event) =>{
+        console.log('halo');
+        console.log(event.target.email.value);
+        console.log(event.target.password.value);
+        event.preventDefault();
+    })
+
+
 
 
 

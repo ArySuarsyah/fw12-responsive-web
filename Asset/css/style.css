@@ -43,6 +43,7 @@ body {
 }
 
 .section-2 {
+    position: relative;
     flex: 1;
     padding: 0 4% 5% 0;
     margin-left: 5%;
@@ -115,6 +116,36 @@ input::placeholder {
     opacity: 0.6;
 }
 
+.alertLogin {
+    background-color: #1900ff61;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+    height: 20%;
+    position: absolute;
+    top: 0;
+    right: 15%;
+    left: 0;
+}
+
+.alertSucces {
+    animation: alertSucces 1s;
+    -webkit-animation: alertSucces 1s alternate;
+}
+
+@keyframes alertSucces {
+    0% {
+        top: -20%;
+    }
+    100% {
+        top: 0;
+    }
+}
+
+
+
 /* .form-wrap input[type="password"] {
     background: url(../image/Vector.png) 95% 50% no-repeat;
 } */
@@ -123,20 +154,28 @@ input::placeholder {
     position: relative;
 }
 
-.password .eye-off {
+.password .hideShow {
     position: absolute;
+    height: 38%;
+    width: 10%;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     top: 0;
     right: 0;
-    margin-top: 13%;
-    margin-right: 9%;
+    margin-top: 45px;
+    margin-right: 25px;
+    background-color: #DEDEDE;
+    cursor: pointer;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
 }
 
-.password .eye {
-    position: absolute;
-    top: 0;
-    right: 0;
-    margin-top: 13%;
-    margin-right: 9%;
+.password svg {
+    width: 40%;
 }
 
 .btn-primary {
