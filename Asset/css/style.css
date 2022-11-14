@@ -136,8 +136,8 @@ input::placeholder {
 
 
 .alertSuccess {
-    animation: 1s alertSuccess 2 alternate 1s;
-    -webkit-animation: 1s alertSuccess 2 alternate 1s;
+    animation: 1.5s alertSuccess 2 alternate;
+    -webkit-animation: 1.5s alertSuccess 2 alternate;
 }
 
 @keyframes alertSuccess {
