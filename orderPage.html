@@ -10,22 +10,34 @@
 </head>
 <body>
     <main class="container-page">
-        <header>
-            <nav class="nav-bar">
-                <div class="brand"><img src="Asset/image/TickitzBlue.png" alt="">
+        <main class="container-orderPage">
+            <nav class="nav-bar-orderPage">
+                <div class="brand-orderPage"><img src="Asset/image/TickitzBlue.png" alt="">
                 </div>
-                <div class="link-nav">
+                <div class="link-nav-orderPage">
                     <a href="index.html">Home</a>
                     <a href="viewAll.html">List Movie</a>
                 </div>
-                <div class="searchNav">
+                <div class="searchNav-orderPage">
                     <img src="Asset/image/search.png" alt="">
                 </div>
-                <div class="btn-nav">
-                    <img src="Asset/image/imageMovie2.png" alt="Profil" class="profil">
+                <div class="btn-nav-orderPage">
+                    <img src="Asset/image/profil.png" alt="Profil" class="profil-orderPage">
+                    <div class="profile-menu-orderPage">
+                        <div class="dropDown-orderPage">
+                            <input type="text" name="inputDrop" class="searchDrop1-orderPage" disabled>
+                            <input type="text" name="inputDrop" class="searchDrop2-orderPage" placeholder="Search">
+                        </div>
+                        <a href="homepageLogin.html">Home</a>
+                        <a href="viewAll.html">List Movie</a>
+                        <a href="profilPage.html">Profile</a>
+                        <a href="signUp.html">Logout</a>
+                        <div class="copyright-viewAll">
+                            © 2020 Tickitz. All Rights Reserved.
+                        </div>
+                    </div>
                 </div>
             </nav>
-        </header>
         <section class="movieSelected">
             <div class="selectHeader">
                 <span>Movie Selected</span>
@@ -41,8 +53,8 @@
             <div class="choose">
                 <div class="screen">
                     <p>Screen</p>
-                    <div class="lineScreen">
-                    </div>
+                    <hr class="lineScreen">
+                    </hr>
                 </div>
                 <div class="gridScreen">
                     <div class="screen1">
@@ -196,6 +208,7 @@
                     <button type="button">Checkout now</button>
                 </a>
             </div>
+            <div class="side-text">Order Info</div>
             <section class="side">
                 <img src="Asset/image/cineOne21.png" alt="">
                 <span>CineOne21 Cinema</span>
@@ -217,7 +230,7 @@
         <section class="footer-section">
             <div class="brand-footer">
                 <img src="Asset/image/Tickitz 2.png" alt="">
-                <span>Stop waiting in line. Buy tickets <br>conveniently, watch movies quietly.</span>
+                <span>Stop waiting in line. Buy tickets conveniently, watch movies quietly.</span>
             </div>
             <div class="nav2">
                 <h6>Explore</h6>
@@ -237,7 +250,7 @@
                     <figcaption class="facebook">Tickitz Cinema id</figcaption>
                 </figure>
                 <figure class="social-Img">
-                    <img src="Asset/image/ig.png" alt="">2
+                    <img src="Asset/image/ig.png" alt="">
                     <figcaption class="instagram">tickitz.id</figcaption>
                 </figure>
                 <figure class="social-Img">

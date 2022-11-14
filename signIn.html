@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sign In</title>
     <link rel="stylesheet" href="Asset/css/style.css">
+    <script src="https://unpkg.com/feather-icons"></script>
 </head>
 <body>
 <main class="container">
@@ -31,13 +32,14 @@
         <section>
             <form class="form-wrap" action="" method="post" >
                 <div>
-                    <label class="form-label" for="email">Email</label>
+                    <label class="form-label emailSignIn" for="email">Email</label>
                     <input type="email" name="email" id="email" placeholder="Write your email" minlength="2" required>
                 </div>
                 <div class="password">
-                    <label class="form-label" for="password">Password</label>
+                    <label class="form-label passwodSignIn" for="password">Password</label>
                     <input type="password" name="password" id="password" placeholder="Write your password" minlength="8" required>
-                    <img class="pwd-img" src="../Asset/Vector.png" alt="">
+                    <i data-feather="eye-off" class="eye-off"></i>
+                    <i data-feather="eye" class="eye"></i>
                 </div>
                 <div>
                     <a href="index.html">
@@ -60,5 +62,14 @@
 
     </section>
 </main>
+<script>
+    feather.replace();
+
+    const email = document.getElementsByTagName('i');
+console.log(email);
+
+
+
+</script>
 </body>
 </html>

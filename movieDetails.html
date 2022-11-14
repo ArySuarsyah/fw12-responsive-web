@@ -9,22 +9,33 @@
 </head>
 <body>
     <main class="container-movieDetails">
-        <header>
-            <nav class="nav-bar-movieDetails">
-                <div class="brand-movieDetails"><img src="Asset/image/TickitzBlue.png" alt="">
-                </div>
-                <div class="link-nav-movieDetails">
-                    <a href="index.html">Home</a>
+        <nav class="nav-bar-movieDetails">
+            <div class="brand-movieDetails"><img src="Asset/image/TickitzBlue.png" alt="">
+            </div>
+            <div class="link-nav-movieDetails">
+                <a href="index.html">Home</a>
+                <a href="viewAll.html">List Movie</a>
+            </div>
+            <div class="searchNav-movieDetails">
+                <img src="Asset/image/search.png" alt="">
+            </div>
+            <div class="btn-nav-movieDetails">
+                <img src="Asset/image/profil.png" alt="Profil" class="profil-movieDetails">
+                <div class="profile-menu-movieDetails">
+                    <div class="dropDown-movieDetails">
+                        <input type="text" name="inputDrop" class="searchDrop1-movieDetails" disabled>
+                        <input type="text" name="inputDrop" class="searchDrop2-movieDetails" placeholder="Search">
+                    </div>
+                    <a href="homepageLogin.html">Home</a>
                     <a href="viewAll.html">List Movie</a>
+                    <a href="profilPage.html">Profile</a>
+                    <a href="signUp.html">Logout</a>
+                    <div class="copyright-viewAll">
+                        © 2020 Tickitz. All Rights Reserved.
+                    </div>
                 </div>
-                <div class="searchNav-movieDetails">
-                    <img src="Asset/image/search.png" alt="">
-                </div>
-                <div class="btn-nav-movieDetails">
-                    <img src="Asset/image/imageMovie2.png" alt="Profil" class="profil">
-                </div>
-            </nav>
-        </header>
+            </div>
+        </nav>
         <section class="section-7">
             <div class="poster">
                 <img src="Asset/image/imageMovie1.png" alt="">
@@ -52,7 +63,7 @@
                         <p>Tom Holland, Michael Keaton, Robert Downey Jr., ...</p>
                     </div>
                 </div>
-                <div class="lineMovieInfo"></div>
+                <hr class="lineMovieInfo"></hr>
                 <div class="sinopsis">
                     <h4>Synopsis</h4>
                     <p>
@@ -76,7 +87,8 @@
             </div>
             <div class="ticketInfo">
                 <div class="ticketSponsor ebuId">
-                    <img src="Asset/image/ebuId.png" alt="ebu.id">                        <h3>ebv.id</h3>
+                    <img src="Asset/image/ebuId.png" alt="ebu.id">
+                    <h3>ebv.id</h3>
                     <span>Whatever street No.12, South Purwokerto</span>
                     <p>08:30am</p>
                     <p>10:30pm</p>
