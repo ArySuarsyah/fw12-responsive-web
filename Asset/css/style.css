@@ -118,6 +118,10 @@ input::placeholder {
 
 .alertLogin {
     background-color: #1900ff61;
+    color: rgb(255, 255, 255);
+    font-family: 'Mulish';
+    font-size: 1.5em;
+    font-weight: 600;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -125,19 +129,23 @@ input::placeholder {
     border-bottom-right-radius: 4px;
     height: 20%;
     position: absolute;
-    top: 0;
+    top: -20%;
     right: 15%;
     left: 0;
 }
 
-.alertSucces {
-    animation: alertSucces 1s;
-    -webkit-animation: alertSucces 1s alternate;
+
+.alertSuccess {
+    animation: 1s alertSuccess 2 alternate 1s;
+    -webkit-animation: 1s alertSuccess 2 alternate 1s;
 }
 
-@keyframes alertSucces {
+@keyframes alertSuccess {
     0% {
         top: -20%;
+    }
+    50% {
+        top: 0;
     }
     100% {
         top: 0;

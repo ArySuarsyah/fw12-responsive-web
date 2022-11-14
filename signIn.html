@@ -24,10 +24,7 @@
     <!-- End  -->
 
     <!-- Form Header-->
-    <section class="section-2">
-        <div class="alertLogin">
-            <span>Login Success</span>
-        </div>
+    <section class="section-2" id="section-2">
         <h3 class="header-form">Sign In</h3>
         <span class="textTitle">Sign in with your data that you entered during your registration</span>
         <!-- End Form Header -->
@@ -92,13 +89,35 @@
 
     // btn-login
 
-    const formLogin = document.getElementById('form-warp')
+    const formLogin = document.getElementById('form-warp');
+    const alertLogin = document.getElementById('alertLogin');
+    const section2 = document.getElementById('section-2');
+    const alertInfo = document.createElement('div');
+    const alertText = document.createElement('span');
 
+    alertInfo.setAttribute('class', 'alertLogin');
+    alertText.innerText = 'Login Success!';
+    alertInfo.appendChild(alertText);
+    section2.appendChild(alertInfo);
+
+
+    
     const submit = document.getElementById('btn-login');
     formLogin.addEventListener('submit', (event) =>{
-        console.log('halo');
-        console.log(event.target.email.value);
-        console.log(event.target.password.value);
+        if(event.target.email.value == 'admin@email' && event.target.password.value == 12345678) {
+            alertInfo.classList.add('alertSuccess');
+            console.log('halo');
+            setTimeout(() => {
+                window.location = '/homepageLogin.html'
+            }, 5000)
+        } else {
+            alertText.innerText = 'Login Failed!'
+            alertInfo.style.backgroundColor = 'rgba(203, 10, 10, 0.513)'
+            alertInfo.classList.add('alertSuccess');
+            setTimeout(() => {
+                window.location.reload();
+            }, 3000)
+        }
         event.preventDefault();
     })
 
