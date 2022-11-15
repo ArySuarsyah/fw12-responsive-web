@@ -678,6 +678,7 @@ input::placeholder {
     position: relative;
     box-sizing: border-box;
     display: flex;
+    justify-content: space-evenly;
     align-content: space-between;
 } 
 
@@ -689,7 +690,6 @@ input::placeholder {
     margin: .9em;
     box-sizing: border-box;
     transition: 2s;
-    border: 1px solid black;
     white-space: nowrap;
     -webkit-transition: 2s;
     -moz-transition: 2s;
@@ -712,7 +712,7 @@ input::placeholder {
 
 .movieCard figure img {
     flex: 1;
-    width: 9.5em;
+    width: 10em;
     border-radius: 4px;
     transition: .2s;
     -webkit-transition: .2s;
@@ -879,7 +879,6 @@ input::placeholder {
     text-align: center;
     margin: 1em  auto;
     width: 9em;
-    border: 1px solid black;
 }
 
 .movieGenre {
