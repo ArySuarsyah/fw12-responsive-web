@@ -689,6 +689,8 @@ input::placeholder {
     margin: .9em;
     box-sizing: border-box;
     transition: 2s;
+    border: 1px solid black;
+    white-space: nowrap;
     -webkit-transition: 2s;
     -moz-transition: 2s;
     -ms-transition: 2s;
@@ -711,11 +713,16 @@ input::placeholder {
 .movieCard figure img {
     flex: 1;
     width: 9.5em;
+    border-radius: 4px;
     transition: .2s;
     -webkit-transition: .2s;
     -moz-transition: .2s;
     -ms-transition: .2s;
     -o-transition: .2s;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
 }
 
 .movieCard img:hover {
@@ -730,16 +737,17 @@ input::placeholder {
 .caption {
     z-index: -1;
     position: absolute;
+    white-space: nowrap;
 }
 
 .movieCard figure:hover {
     animation: figureAnimation 1.5s forwards;
-    -webkit-animation: figureAnimation 1.5s forwards;
+    -webkit-animation: figureAnimation .5s forwards;
 }
 
 .movieCard figure:hover > .caption {
-    animation: detailAnimation1 .4s forwards;
-    -webkit-animation: detailAnimation1 .4s forwards;
+    animation: detailAnimation1 .5s forwards;
+    -webkit-animation: detailAnimation1 .5s forwards;
 }
 
 
@@ -858,8 +866,8 @@ input::placeholder {
     background-color: #FFF;
 }
 
-.movieTitle, .movieGenre, .btn-detail {
-    margin-top: 1em;
+.movieTitle, .movieGenre {
+    white-space: normal;
 }
 
 .movieTitle {
@@ -868,6 +876,10 @@ input::placeholder {
     font-size: 1em;
     text-align: center;
     letter-spacing: 0.15px;
+    text-align: center;
+    margin: 1em  auto;
+    width: 9em;
+    border: 1px solid black;
 }
 
 .movieGenre {
@@ -1018,6 +1030,7 @@ input::placeholder {
 .homePage-footer {
     font-family: 'Mulish';
     width: 100%;
+    box-sizing: border-box;
     height: 10%;
     display: flex;
     justify-content: center;
@@ -5648,7 +5661,7 @@ input[type="date"] {
     .container-page {
         padding: 0;
         margin: 0;
-        width: 100vw;
+        width: 80%;
     }
 
     .nav-bar {
@@ -5816,21 +5829,22 @@ input[type="date"] {
         padding: 0 1em;
         display: flex;
         flex-direction: column;
-        width: 100%;
         box-sizing: border-box;
     }
-
-
-
+    
+    
+    
     .footer-section {
-        width: 100%;
+        width: 80%;
+        box-sizing: border-box;
         margin: auto;
         padding: 0;
         display: flex;
         flex-direction: column;
     }
-
+    
     .brand-footer {
+
         margin: 0;
         width: 100%;
     }
