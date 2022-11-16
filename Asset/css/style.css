@@ -688,12 +688,12 @@ input::placeholder {
     padding: 2em;
     margin: .5em;
     box-sizing: border-box;
-    transition: 2s;
+    transition: 1s;
     white-space: nowrap;
-    -webkit-transition: 2s;
-    -moz-transition: 2s;
-    -ms-transition: 2s;
-    -o-transition: 2s;
+    -webkit-transition: 1s;
+    -moz-transition: 1s;
+    -ms-transition: 1s;
+    -o-transition: 1s;
 }
 
 .card2 {
@@ -749,18 +749,18 @@ input::placeholder {
     white-space: nowrap;
 }
 
-.movieCard figure:hover {
+/* .movieCard figure:hover {
     animation: figureAnimation 1.5s forwards;
     -webkit-animation: figureAnimation .5s forwards;
-}
+} */
 
 .movieCard figure:hover > .caption {
-    animation: detailAnimation1 .5s forwards;
-    -webkit-animation: detailAnimation1 .5s forwards;
+    animation: detailAnimation1 forwards;
+    -webkit-animation: detailAnimation1 forwards;
+    animation-duration: .7s;
+    animation-delay: 0;
 }
 
-
-/* Persiapan DropBox */
 
 @keyframes figureAnimation {
     0% {
@@ -5741,6 +5741,7 @@ input[type="date"] {
     
     .movieCard {
         overflow-x: scroll;
+        padding-bottom: 1em;
     }
 
     .movieCard figure {
@@ -5750,7 +5751,7 @@ input[type="date"] {
         text-align: center;
         border: 0;
     }
-    .movieCard figure img{
+    .movieCard figure img {
         width: 8em;
     }
 
@@ -5780,7 +5781,7 @@ input[type="date"] {
         margin: 0;
         padding: 0;
         text-align: center;
-        width: 25em;
+        width: 27em;
         text-align: start;
     }
 
@@ -5796,6 +5797,22 @@ input[type="date"] {
     .card {
         margin: 0;
         padding: 0;
+    }
+    
+    .card2 {
+        overflow-x: scroll;
+        box-sizing: border-box;
+        width: 100%;
+    }
+    
+    .card2 figure {
+        margin: 1em;
+        text-align: center;
+        padding: 1em;
+    }
+
+    .card2 img {
+        width: 8em;
     }
 
     .movieCard figure:hover {

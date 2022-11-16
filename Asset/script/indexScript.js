@@ -36,7 +36,7 @@ const movieData = [
     ]
 
 movieData.forEach(el => {
-    const figureParent = document.createElement('figure');
+    let figureParent = document.createElement(`figure`);
     const picture = document.createElement('img');
     const movieInfo = document.createElement('div');
     const movieTitle = document.createElement('figcaption');
@@ -63,10 +63,10 @@ movieData.forEach(el => {
     movieInfo.appendChild(linkDetail);
     linkDetail.appendChild(btnCard);
     
-    figureParent.addEventListener('mouseenter', () => {
-        figureParent.target.style.height = '30em';
+    figureParent.addEventListener('mouseover', () => {
+        figureParent.style.height = '27em';
     })
-    figureParent.addEventListener('mouseleave', () => {
+    figureParent.addEventListener('mouseout', () => {
         figureParent.style.height = '19em';
     })
 
