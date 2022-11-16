@@ -758,7 +758,7 @@ input::placeholder {
     animation: detailAnimation1 forwards;
     -webkit-animation: detailAnimation1 forwards;
     animation-duration: .7s;
-    animation-delay: 0;
+    animation-delay: 0s;
 }
 
 
@@ -1520,6 +1520,15 @@ footer h6 {
     box-sizing: border-box;
     border: 2px solid #DEDEDE;
     box-sizing: border-box;
+}
+
+.listMovie img {
+    width: 10em;
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
 }
 
 .numberPage {
