@@ -8,10 +8,13 @@ const genreData = fetch('https://api.themoviedb.org/3/genre/list?api_key=0425e48
 
 const proses = async () => {
     const respons = await getMovieData;
+
     const data = await respons.json(); 
-    //buatkan di sini resu mas.? bukan mas 
+
     const responsGenre = await genreData; //gitu yoi lanjut 
+    
     const dataGenre = await responsGenre.json();
+
     console.log(dataGenre.genres);
     
     let movie = data.results
@@ -37,15 +40,15 @@ const proses = async () => {
         divInfo.appendChild(title);
         const genre = document.createElement('figcaption');
         genre.className = 'movieGenre';
-        // genre.innerText = res.genres; //id Genre
-        
-                for (let i = 0; i < el.genre_ids.length; i++) {
-                    for (let j = 0; j < dataGenre.genres.length; j++) {
-                        if (el.genre_ids[i] == dataGenre.genres[j].id) {
-                            genre.innerText += ` ${dataGenre.genres[j].name} `
-                        }
-                    }
-                } 
+
+        // looping genre
+        for (let i = 0; i < el.genre_ids.length; i++) {
+            for (let j = 0; j < dataGenre.genres.length; j++) {
+                if (el.genre_ids[i] == dataGenre.genres[j].id) {
+                    genre.innerText += ` ${dataGenre.genres[j].name} `; // genre name 
+                }
+            }
+        } 
         divInfo.appendChild(genre);
         
         
@@ -55,16 +58,11 @@ const proses = async () => {
 
 
         const btnCard = document.createElement('button');
-        linkDetail.appendChild(btnCard);
+        divInfo.appendChild(btnCard);
         btnCard.className = 'btn-detail';
         btnCard.innerText = 'Details';
         btnCard.type = 'submit';
         
     });
 };
-    
-    
-    
-    
-    
-    proses()
+proses()
