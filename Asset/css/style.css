@@ -5555,7 +5555,6 @@ input[type="date"] {
 
 .dateForm {
     display: flex;
-    /* flex-direction:; */
 }
 
 .dateForm input[type="date"] {
@@ -5917,20 +5916,16 @@ input[type="date"] {
     }
 
     .homePage-footer {
-        margin: 1em auto;
-        padding: 0 1em;
+    margin: 1em auto;
+        padding: 0;
         display: flex;
         flex-direction: column;
-        box-sizing: border-box;
-        width: 100%;
-        box-sizing: border-box;
+        border: 1px solid black;
     }
 
     
     
     .footer-section {
-        width: 80%;
-        box-sizing: border-box;
         margin: auto;
         padding: 0;
         display: flex;
@@ -5938,9 +5933,7 @@ input[type="date"] {
     }
     
     .brand-footer {
-
         margin: 0;
-        width: 100%;
     }
 
     .brand-footer img {
