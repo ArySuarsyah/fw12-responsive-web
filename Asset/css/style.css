@@ -5736,6 +5736,7 @@ input[type="date"] {
         padding: 0;
         margin: 0;
         width: 80%;
+        text-align: center;
     }
 
     .nav-bar {
@@ -5889,9 +5890,18 @@ input[type="date"] {
     .join {
         background: #FFFFFF;
         box-shadow: 0px 8px 16px rgba(186, 186, 186, 0.15);
-        width: 22em;
-        margin: 2em auto 0 auto;
+        width: 50%;
+        /* margin: 2em auto 0 auto; */
+        margin: 0 1em;
         padding: 3em 0;
+        display: flex;
+        justify-self: center;
+        align-items: center;
+    }
+
+    .section6-title {
+        font-size: 60%;
+        margin: auto;
     }
 
     .form-join {
@@ -5901,13 +5911,13 @@ input[type="date"] {
     }
 
     .form-join input {
-        width: 20em;
+        width: 16em;
         margin: auto;
     }
 
     .btn-join {
         margin-top: 2em;
-        width: 16.5em;
+        width: 13.2em;
     }
 
     .memberInfo {
@@ -5916,13 +5926,14 @@ input[type="date"] {
     }
 
     .homePage-footer {
-    margin: 1em auto;
         padding: 0;
+        width: 80%;
         display: flex;
         flex-direction: column;
         border: 1px solid black;
+        box-sizing: border-box;
     }
-
+    
     
     
     .footer-section {
