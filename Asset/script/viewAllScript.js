@@ -11,7 +11,7 @@ const proses = async () => {
 
     const data = await respons.json(); 
 
-    const responsGenre = await genreData; //gitu yoi lanjut 
+    const responsGenre = await genreData;
     
     const dataGenre = await responsGenre.json();
 
